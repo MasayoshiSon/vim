@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/opt/4412/ELITE/rootfs/driver/platform_driver_led'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_3='/opt/EmbedSky/TQIMX6/TQ_COREC/linux-4.1.15/fs'
+let g:netrw_dirhist_4='/opt/EmbedSky/TQIMX6/TQ_COREC/linux-4.1.15/drivers/input/keyboard'
+let g:netrw_dirhist_5='/opt/4412/ELITE/drivers/deepen/export_symbol'
+let g:netrw_dirhist_6='/opt/4412/ELITE/drivers/deepen/layer_think/way.1/test'
+let g:netrw_dirhist_7='/opt/4412/ELITE/drivers/deepen/layer_think/way.2/interface'
+let g:netrw_dirhist_8='/opt/4412/ELITE/drivers/deepen/layer_think/way.3/device'
+let g:netrw_dirhist_9='/opt/4412/ELITE/project/mjpg-streamer-r63/plugins/output_file'
