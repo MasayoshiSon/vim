@@ -36,4 +36,11 @@ G. Onmi-Completion
 H. superTab:
 	将tab 映射为Ctrl + x + o
 
+I. 删除：
+	1. byw， y$, y^
+	2. d3k, d3j, dG, dgg
+	3. d/main 从当前行向后删除到第一个main匹配处
+	4. d?main 从当前行向后删除到第一个main匹配处
+ 
+
 >> end------------------------------------>>
