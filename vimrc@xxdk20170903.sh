@@ -6,10 +6,7 @@
 "# Created Time: Thu 04 Jun 2015 05:59:17 PM CST
 "# NOTE
 "#		Put this file in /home/xxdk/-
-"#		sudo mv vimrc@xxdk.sh .vimrc
-"#		if filereadable("~/bashrc\@xxdk.sh")
-"#	  		source ~/bashrc\@xxdk.sh
-"#  	endif"")
+"#		sudo mv vimrc@xxdk*.sh .vimrc
 "#
 "#########################################################################
 
