@@ -7,8 +7,8 @@
 # Usage:
 #	Put this file in /home/xxdk/~
 #   vim .bashrc 
-#   if [ -f ~/bashrc\@xxdk.sh ];
-#		then source ~/bashrc\@xxdk.sh
+#   if [ -f ~/bashrc\@xxdk*.sh ];
+#		then source ~/bashrc\@xxdk*.sh
 #   fi
 #########################################################################
 #!/bin/bash
