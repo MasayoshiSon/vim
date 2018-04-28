@@ -1,15 +1,20 @@
-# vim
+vim
 vim configuration!
+
 *** 201804028 数字屏保
+
 	- sudo apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
 *** 20170903------------------------------------>>
+
 A. cscope:
 	1. cscope -Rbq 生成cscope文件
 	2. : cs find g xxdk 查找出现
 	3. : cs find c xxdk 查看调用
+	
 B. MiniBuffer:
 	- ctrl + h, j, k, l 上下左右移动切换窗口
 	- ctrl + 箭头 上下左右移动切换窗口
+	
 C. MainWindow:
         - 正常模式下 wm 开启关闭窗口
 
