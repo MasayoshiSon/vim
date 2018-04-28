@@ -1,12 +1,15 @@
 "########################################################################
 "# File Name:vimrc@xxdk.sh
-"# Version: v20160820
+"# Version: v20180428
 "# Author: xxdk
 "# mail: v.manstein@qq.com
 "# Created Time: Thu 04 Jun 2015 05:59:17 PM CST
 "# NOTE
 "#		Put this file in /home/xxdk/-
-"#		sudo mv vimrc@xxdk*.sh .vimrc
+"#		sudo mv vimrc@xxdk.sh .vimrc
+"#		if filereadable("~/bashrc\@xxdk*.sh")
+"#	  		source ~/bashrc\@xxdk*.sh
+"#  	endif"")
 "#
 "#########################################################################
 
@@ -142,11 +145,11 @@ nmap <leader>f :find<cr>
 " 映射全选+复制 ctrl+a
 map <C-A> ggVGY
 map! <C-A> <Esc>ggVGY
-map <F12> gg=G
+map <F5> gg=G
 " 选中状态下 Ctrl+c 复制
 vmap <C-c> "+y
 "去空行  
-nnoremap <F2> :g/^\s*$/d<CR> 
+"nnoremap <F2> :g/^\s*$/d<CR> 
 "比较文件  
 nnoremap <C-F2> :vert diffsplit 
 "新建标签  
@@ -156,7 +159,7 @@ map <F3> :tabnew .<CR>
 "打开树状文件目录  
 map <C-F3> \be  
 "C，C++ 按F5编译运行
-map <F5> :call CompileRunGcc()<CR>
+map <F1> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
@@ -176,7 +179,7 @@ func! CompileRunGcc()
 	endif
 endfunc
 "C,C++的调试
-map <F8> :call Rungdb()<CR>
+map <F4> :call Rungdb()<CR>
 func! Rungdb()
 	exec "w"
 	exec "!g++ % -g -o %<"
@@ -340,7 +343,7 @@ let Tlist_WinWidth=40        "设置taglist宽度
 let Tlist_Exit_OnlyWindow=1  "tagList窗口是最后一个窗口，则退出Vim
 let Tlist_Use_Right_Window=1 "在Vim窗口右侧显示taglist窗口"""""""
 let Tlist_Ctags_Cmd="/usr/bin/ctags"
-map <F10> :TlistToggle<CR>
+map <F6> :TlistToggle<CR>
 
 " winManager
 let g:winManagerWindowLayout='FileExplorer|TagList'
@@ -367,3 +370,62 @@ let g:SuperTabRetainCompletionType=2
 " tab -> Ctrl+x+o
 let g:SuperTabDefaultCompletionType="<C-X><C-O>" 
 
+" srcExpl@20180428
+ """"""""""""""""""""for SourceExplorer plugin""""""""""""""""""""""""".
+"{
+" // The switch of the Source Explorer 
+nmap se :SrcExplToggle<CR>
+
+
+" // Set the height of Source Explorer window 
+let g:SrcExpl_winHeight = 6 
+
+
+" // Set 100 ms for refreshing the Source Explorer 
+let g:SrcExpl_refreshTime = 100 
+
+
+" // Set "Enter" key to jump into the exact definition context 
+let g:SrcExpl_jumpKey = "<ENTER>" 
+
+
+" // Set "Space" key for back from the definition context 
+let g:SrcExpl_gobackKey = "<SPACE>" 
+
+
+" // In order to avoid conflicts, the Source Explorer should know what plugins
+" // except itself are using buffers. And you need add their buffer names into
+" // below listaccording to the command ":buffers!"
+"let g:SrcExpl_pluginList = [ 
+"        \ "__Tag_List__", 
+"        \ "_NERD_tree_" 
+"    \ ] 
+
+
+" // Enable/Disable the local definition searching, and note that this is not 
+" // guaranteed to work, the Source Explorer doesn't check the syntax for now. 
+" // It only searches for a match with the keyword according to command 'gd' 
+let g:SrcExpl_searchLocalDef = 1 
+
+
+" // Do not let the Source Explorer update the tags file when opening 
+let g:SrcExpl_isUpdateTags = 0 
+
+
+" // Use 'Exuberant Ctags' with '--sort=foldcase -R .' or '-L cscope.files' to 
+" // create/update the tags file 
+let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ." 
+
+
+" // Set "<F12>" key for updating the tags file artificially 
+let g:SrcExpl_updateTagsKey = "<F12>" 
+
+
+" // Set "<F10>" key for displaying the previous definition in the jump list 
+let g:SrcExpl_prevDefKey = "<F10>" 
+
+
+" // Set "<F11>" key for displaying the next definition in the jump list 
+let g:SrcExpl_nextDefKey = "<F11>" 
+"}
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
