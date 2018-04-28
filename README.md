@@ -1,10 +1,12 @@
 
+
 vim
 vim configuration!
 
 *** 201804028 数字屏保
 
 	- sudo apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
+	- 参考[https://wiki.archlinux.org/index.php/XScreenSaver_(简体中文)]
 *** 20170903------------------------------------>>
 
 A. cscope:
