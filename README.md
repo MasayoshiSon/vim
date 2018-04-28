@@ -1,5 +1,4 @@
 
-
 vim
 vim configuration!
 
@@ -7,6 +6,8 @@ vim configuration!
 
 	- sudo apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
 	- 参考[https://wiki.archlinux.org/index.php/XScreenSaver_(简体中文)]
+- 在搜索栏目搜索startup application
+- 添加/usr/bin/xscreensaver -no-splash 启动项 
 *** 20170903------------------------------------>>
 
 A. cscope:
